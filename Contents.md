@@ -4,7 +4,7 @@
 
 ### Test connection to triple store
 
-[My link to queryOSH](notebooks/queryOSH.ipynb)
+[My link to queryOSH](Notebooks/queryOSH.ipynb)
 
 ## Coding to represent terminological knowledge - The TBox
 
