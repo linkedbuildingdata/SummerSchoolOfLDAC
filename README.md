@@ -10,7 +10,9 @@ Please move to [contents](Contents.md) to start working with the material of the
 
 ## Usage and Tools
 
-The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a ipyhton installation is required. We suggest using a python distribution such as Anaconda to work locally.
+The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a [iPyhton](https://ipython.org/) installation is required. We suggest using a python distribution such as [Anaconda](https://www.anaconda.com/distribution/) to work locally.
+
+If you are not familiar to iPython/ Jupyter etc. please refer to the [introductory content](https://jakevdp.github.io/PythonDataScienceHandbook/01.00-ipython-beyond-normal-python.html) by Jake VanderPlas
 
 ## Authors
 
