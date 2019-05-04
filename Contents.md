@@ -2,14 +2,20 @@
 
 ## Getting started
 
-### Test connection to triple store
+* [00-00 Check Python Setup](Notebooks/00-00-Check-Python-Setup.ipynb)  
+* [00-01 Check Internet Connection](Notebooks/00-01-Check-Internet-Connection.ipynb)  
+* [00-02 Further Reading](Notebooks/00-02-Further-Reading.ipynb)  
+  
+* [My link to queryOSH](Notebooks/queryOSH.ipynb)
 
-[My link to queryOSH](Notebooks/queryOSH.ipynb)
+## Chapter 1 - Guided Programming
 
-## Coding to represent terminological knowledge - The TBox
+* [01-00 Program your TBox](Notebooks/01-00-Program-your-TBox.ipynb)  
+* [01-01 Program your ABox](Notebooks/01-01-Program-your-ABox.ipynb)  
+* [01-03 Query a knowledge-base with SPARQL](Notebooks/01-03-Query-a-knowledge-base-with-SPARQL.ipynb)  
+* [01-04 Represent rules with SWRL](Notebooks/01-04-Represent-rules-with-SWRL.ipynb)  
 
-## Coding to represent assertional knowledge - The ABox
+## Chapter 2 - Open challenges for the **Coding Challenge**
 
-## Coding challenge
-
-### Integration of Heterogeneous Building Product Data
+* [02-00 Integrate heterogeneous building product data](Notebooks/02-00-Integrate-heterogeneous-building-product-data.ipynb)  
+* [02-01 Knowledge-based Control of Buildings](Notebooks/02-01-Knowledge-based-Control-of-Buildings.ipynb)  
