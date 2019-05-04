@@ -16,9 +16,9 @@ If you are not familiar to iPython/ Jupyter etc. please refer to the [introducto
 
 ## Authors
 
-A couple of members of the W3C Linked Building Data Community Group contributed to the content of this repository.
+A couple of members of the W3C Linked Building Data Community Group contributed to the content of this repository. Amongst others:
 
-**Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
+* **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
 
 ## Acknowledgements
 
