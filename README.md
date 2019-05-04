@@ -18,7 +18,7 @@ A couple of members of the W3C Linked Building Data Community Group contributed 
 
 ## Acknowledgements
 
-The structure of the content provided follows the approach chosen by the principles established by Jake VanderPlas <@jakvdp> for his [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/) [Oreilly](http://shop.oreilly.com/product/0636920034919.do).
+The authors would like to thank Jake VanderPlas [@jakvdp](https://github.com/jakevdp) for providing his [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/) [(Oreilly)](http://shop.oreilly.com/product/0636920034919.do) open source as the structure of the content provided in this repository follows the approach chosen by him for his book.
 
 ## License
 
