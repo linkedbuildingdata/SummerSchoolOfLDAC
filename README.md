@@ -6,11 +6,11 @@ This repository contains the documentation and source of the coding challenge of
 
 ## Getting Started
 
-Please move to [Contents](contents.md) to start working with the material of the 2019 edition of the Summer School of LDAC.
+Please move to [contents](contents.md) to start working with the material of the 2019 edition of the Summer School of LDAC.
 
 ## Usage and Tools
 
-The content of this summer school are distributed using Jupyter notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a ipyhton installation is required. We suggest using a python distribution such as Anaconda to work locally.
+The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a ipyhton installation is required. We suggest using a python distribution such as Anaconda to work locally.
 
 ## Authors
 
