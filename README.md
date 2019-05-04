@@ -4,7 +4,7 @@ This repository contains the documentation and source of the Summer School of Li
 
 ## Getting Started
 
-Please move to [Contents](Contents) to start working with the material of the 2019 edition of the Summer School of LDAC.
+Please move to [Contents](Contents.md) to start working with the material of the 2019 edition of the Summer School of LDAC.
 
 ## Usage and Tools
 
