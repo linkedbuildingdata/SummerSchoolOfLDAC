@@ -1,5 +1,5 @@
 # Summer School Of LDAC
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/w3c-lbd-cg/SummerSchoolOfLDAC/master)  
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/GeorgFerdinandSchneider/SummerSchoolOfLDAC/master)  
 This repository contains the documentation and source of the coding challenge of the [Summer School of Linked Data in Architecture and Construction](http://linkedbuildingdata.net/ldac2019/summerschool/) held 17 - 18 June in Lisbon, Portugal. The summer school precedes the [7th Linked Data in Architecture and Construction (LDAC)](http://linkedbuildingdata.net/ldac2019/) work shop.
 
 ![Summer School Banner](figures/LogoLDACSummerschool.png)
@@ -16,7 +16,7 @@ If you are not familiar to iPython/ Jupyter etc. please refer to the [introducto
 
 ## Authors
 
-A couple of members of the W3C Linked Building Data Community Group contributed to the content of this repository. Amongst others:
+A couple of persons contributed to the content of this repository. Amongst others:
 
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
 
