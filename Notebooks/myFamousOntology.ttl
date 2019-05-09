@@ -1,0 +1,30 @@
+@prefix ont: <https://example.org/myFamousOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/myFamousOntology> a owl:ontology .
+
+ont:Aggregate a owl:Class .
+
+ont:AirHandlingUnit a owl:Class ;
+    rdfs:subClassOf ont:BuildingEquipment .
+
+ont:Part a owl:Class .
+
+ont:Sensor a owl:Class ;
+    rdfs:subClassOf ont:BuildingEquipment .
+
+ont:Space a owl:Class ;
+    rdfs:subClassOf ont:BuildingElement .
+
+ont:hasLocation a owl:ObjectProperty .
+
+ont:hasPart a owl:ObjectProperty .
+
+ont:BuildingElement a owl:Class .
+
+ont:BuildingEquipment a owl:Class .
+
