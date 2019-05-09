@@ -6,7 +6,7 @@ This repository contains the documentation and source of the coding challenge of
 
 ## Getting Started
 
-Please move to [contents](Contents.md) to start working with the material of the 2019 edition of the Summer School of LDAC.
+Please move to [Index](Notebooks/Index.ipynb) to start working with the material of the 2019 edition of the Summer School of LDAC.
 
 ## Usage and Tools
 
