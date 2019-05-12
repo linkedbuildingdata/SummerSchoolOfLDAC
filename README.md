@@ -24,6 +24,12 @@ A couple of persons contributed to the content of this repository. Amongst other
 
 The authors would like to thank Jake VanderPlas [@jakvdp](https://github.com/jakevdp) for providing his [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/) [(Oreilly)](http://shop.oreilly.com/product/0636920034919.do) open source as the structure of the content provided in this repository follows the approach chosen by him for his book.
 
+## Data
+
+We store some open data obtained from other sources in the [data](data) folder of this repository:
+
+* 2012-03-23-Duplex-Handover.xlsx from *Common Building Information Model Files and Tools* by E. William East, PhD, PE - Engineer Research and Development Center, U.S Army, Corps of Engineers, [https://www.nibs.org/page/bsa_commonbimfiles#project1](https://www.nibs.org/page/bsa_commonbimfiles#project1), Last accessed 12 May 2019.
+
 ## License
 
 ### Code
