@@ -1,5 +1,5 @@
 FROM openjdk:11.0.3-jdk
-MAINTAINER rui.klerk@campus.ul.pt
+MAINTAINER Rui de Klerk <rui.klerk@campus.ul.pt>
 
 # Dockerfile copied and adapted from Spencer Park: https://github.com/SpencerPark/ijava-binder/blob/master/Dockerfile
 
@@ -39,17 +39,8 @@ RUN unzip apache-jena-fuseki-3.11.0.zip -d fuseki
 ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/$NB_USER
-RUN java -classpath apache-jena/lib/jena.jar ;\
-  apache-jena/lib/xercesImpl.jar ;\
-  apache-jena/lib/xml-apis.jar ;\
-  apache-jena/lib/icu4j.jar ;\
-  apache-jena/lib/concurrent.jar ;\
-  apache-jena/lib/jakarta-oro-2.0.5.jar ;\
-  apache-jena/lib/antlr.jar ;\
-  apache-jena/lib/junit.jar ;\
-  apache-jena/lib/commons-logging.jar ;\
-  apache-jena/lib/log4j-1.2.7.jar ;\
-  apache-jena/lib/rdf-api-2001-01-19.jar 
+RUN java -classpath apache-jena/lib/* ;\
+  fuseki/lib/*
 
 RUN adduser --disabled-password \
     --gecos "Default user" \
