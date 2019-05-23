@@ -27,13 +27,19 @@ RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-3.11.0.zip
 
 # Unpack and install Jena
 RUN unzip apache-jena-3.11.0.zip -d apache-jena 
+
+# Download Apache Jena Fuseki
+RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-fuseki-3.11.0.zip > apache-jena-fuseki-3.11.0.zip
+
+# Unpack and install Apache Jena Fuseki
+RUN unzip apache-jena-fuseki-3.11.0.zip -d fuseki
   
 # Set up the user environment
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/$NB_USER
-ENV CLASSPATH apache-jena/lib/jena.jar ;\
+RUN java -classpath apache-jena/lib/jena.jar ;\
   apache-jena/lib/xercesImpl.jar ;\
   apache-jena/lib/xml-apis.jar ;\
   apache-jena/lib/icu4j.jar ;\
