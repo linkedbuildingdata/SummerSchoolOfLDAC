@@ -22,25 +22,30 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
   && cd ijava-kernel \
   && python3 install.py --sys-prefix
 
+# -- WIP --
 # Download Apache Jena
-RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-3.11.0.zip > apache-jena-3.11.0.zip
+#RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-3.11.0.zip > apache-jena-3.11.0.zip
 
 # Unpack and install Jena
-RUN unzip apache-jena-3.11.0.zip -d apache-jena 
+#RUN unzip apache-jena-3.11.0.zip -d apache-jena 
 
 # Download Apache Jena Fuseki
-RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-fuseki-3.11.0.zip > apache-jena-fuseki-3.11.0.zip
+#RUN curl -L http://mirrors.up.pt/pub/apache/jena/binaries/apache-jena-fuseki-3.11.0.zip > apache-jena-fuseki-3.11.0.zip
 
 # Unpack and install Apache Jena Fuseki
-RUN unzip apache-jena-fuseki-3.11.0.zip -d fuseki
+#RUN unzip apache-jena-fuseki-3.11.0.zip -d fuseki
+# -- WIP --
   
 # Set up the user environment
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/$NB_USER
-RUN java -classpath apache-jena/lib/* ;\
-  fuseki/lib/*
+
+# -- WIP --
+#RUN java -classpath apache-jena/lib/* ;\
+#  fuseki/lib/*
+# -- WIP --
 
 RUN adduser --disabled-password \
     --gecos "Default user" \
