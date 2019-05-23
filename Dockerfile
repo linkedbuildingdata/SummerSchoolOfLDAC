@@ -43,7 +43,7 @@ ENV CLASSPATH apache-jena/lib/jena.jar ;\
   apache-jena/lib/junit.jar ;\
   apache-jena/lib/commons-logging.jar ;\
   apache-jena/lib/log4j-1.2.7.jar ;\
-  apache-jena/lib/rdf-api-2001-01-19.jar ;\
+  apache-jena/lib/rdf-api-2001-01-19.jar 
 
 RUN adduser --disabled-password \
     --gecos "Default user" \
