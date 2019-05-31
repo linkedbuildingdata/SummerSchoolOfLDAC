@@ -38,6 +38,8 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
   
 # Set up the user environment
 
+#ENV IJAVA_CLASSPATH apache-jena/lib/* ; fuseki/lib/*
+
 ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/$NB_USER
