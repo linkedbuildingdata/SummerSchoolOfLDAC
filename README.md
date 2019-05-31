@@ -19,7 +19,7 @@ If you are not familiar to iPython/ Jupyter etc. please refer to the [introducto
 A couple of persons contributed to the content of this repository (Sorted alphabetically):
 
 * **Matthias Bonduel**, [RG](https://www.researchgate.net/profile/Mathias_Bonduel)  
-* **Rui deKlerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
+* **Rui de Klerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
 * **Kris McGlinn**, [RG](https://www.researchgate.net/profile/Dr_Kris_Mcglinn)  
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
 * **Anna Wagner**, [RG](https://www.researchgate.net/profile/Anna_Wagner13)  
@@ -37,7 +37,7 @@ We store some open data obtained from other sources in the [data](data) folder o
 ## License
 
 ### Code
-All source code provided in this repositoy is licensed under the [MIT license](LICENSE-CODE).
+All source code provided in this repository is licensed under the [MIT license](LICENSE-CODE).
 
 ### Text
 The textual description in the notebooks and all other content which is not source code is licensed under the [CC-BY-SA-4.0](LICENSE-TEXT) license.
