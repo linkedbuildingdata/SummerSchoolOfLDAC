@@ -16,9 +16,13 @@ If you are not familiar to iPython/ Jupyter etc. please refer to the [introducto
 
 ## Authors
 
-A couple of persons contributed to the content of this repository. Amongst others:
+A couple of persons contributed to the content of this repository (Sorted alphabetically):
 
+* **Matthias Bonduel**, [RG](https://www.researchgate.net/profile/Mathias_Bonduel)  
+* **Rui deKlerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
+* **Kris McGlinn**, [RG](https://www.researchgate.net/profile/Dr_Kris_Mcglinn)  
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
+* **Anna Wagner**, [RG](https://www.researchgate.net/profile/Anna_Wagner13)  
 
 ## Acknowledgements
 
