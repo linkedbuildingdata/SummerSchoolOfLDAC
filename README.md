@@ -21,6 +21,7 @@ A couple of persons contributed to the content of this repository (Sorted alphab
 * **Matthias Bonduel**, [RG](https://www.researchgate.net/profile/Mathias_Bonduel)  
 * **Rui de Klerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
 * **Kris McGlinn**, [RG](https://www.researchgate.net/profile/Dr_Kris_Mcglinn)  
+* **Pieter Pauwels**, [RG](https://www.researchgate.net/profile/Pieter_Pauwels)  
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
 * **Walter Terkaj**, [RG](https://www.researchgate.net/profile/Walter_Terkaj)  
 * **Anna Wagner**, [RG](https://www.researchgate.net/profile/Anna_Wagner13)  
