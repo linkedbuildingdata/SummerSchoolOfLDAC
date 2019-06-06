@@ -22,6 +22,7 @@ A couple of persons contributed to the content of this repository (Sorted alphab
 * **Rui de Klerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
 * **Kris McGlinn**, [RG](https://www.researchgate.net/profile/Dr_Kris_Mcglinn)  
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
+**Walter Terkaj**, [RG](https://www.researchgate.net/profile/Walter_Terkaj)  
 * **Anna Wagner**, [RG](https://www.researchgate.net/profile/Anna_Wagner13)  
 
 ## Acknowledgements
