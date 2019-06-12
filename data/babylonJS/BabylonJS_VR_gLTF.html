@@ -1,0 +1,160 @@
+<!-- 
+Authors: 
+Walter Terkaj (CNR-STIIMA), walter.terkaj@stiima.cnr.it
+Nilda Uzgoren (Politecnico Di Milano), nilda.uzgoren@mail.polimi.it
+Marcello Urgo (Politecnico Di Milano), marcello.urgo@polimi.it
+
+Project: Virtual Factory Learning Toolkit (VLFT), www.vlft.eu
+-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BabylonJS VR gLTF example</title>
+
+    <style>
+        html, body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+    </style>
+
+    <!-- Link to pep.js to ensure pointer events work consistently in all browsers -->
+    <script src="https://code.jquery.com/pep/0.4.2/pep.min.js"></script>
+    <!-- Link to the last version of BabylonJS -->
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <!-- Link to open inspector -->
+    <script src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+    <!-- Link to the last version of BabylonJS loaders to enable loading filetypes such as .gltf -->
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+
+</head>
+
+<body>
+
+   
+    <canvas id="renderCanvas"></canvas> <!--touch-action="none" for best results from PEP-->
+
+    <script>
+
+		// Create canvas and engine
+		var canvas = document.getElementById("renderCanvas");
+		var engine = new BABYLON.Engine(canvas, true);
+		
+		/**
+		* Import an object to a 3D scene. The unit of measurement is not explicitly set in BabylonJS. Therefore the user must implicitly consider a reference unit (e.g. 1 unit = 1 m) and then adjust all positions and scaling accordingly. Regarding imported 3D objects, particular attention must be paid to the unit of measurement used to generate the source 3D model.
+		* @param  {BABYLON.Scene} scene The scene where the object is imported
+		* @param  {string} objID Identifier of the object to be imported
+		* @param  {string} filepath Definition of the gLTF file to be loaded in terms of URL ("http://www.example.com/example.glb") or local filepath (e.g. "models/example.glb")
+		* @param  {Number} pos_x Position of the object along the x-axis. 
+		* @param  {Number} pos_y Position of the object along the y-axis
+		* @param  {Number} pos_z Position of the object along the z-axis
+		* @param  {Number} scal_x Scaling of the object along the x-axis (1 means no change)
+		* @param  {Number} scal_y Scaling of the object along the y-axis (1 means no change)
+		* @param  {Number} scal_z Scaling of the object along the z-axis (1 means no change)
+		* @param  {Number} rot_x Rotation of the object about the x-axis in terms of radians
+		* @param  {Number} rot_y Rotation of the object about the y-axis in terms of radians
+		* @param  {Number} rot_z Rotation of the object about the z-axis in terms of radians
+		*/	
+		function import_OBJ (scene, objID, filepath, pos_x, pos_y, pos_z, scal_x, scal_y, scal_z, rot_x, rot_y, rot_z){
+
+			var loader = new BABYLON.AssetsManager(scene);
+			var ObjLoader  = loader.addMeshTask(objID,"", filepath);
+
+            loader.onFinish = function(tasks) {
+                async function processArray(array) {
+                    for (const item of array) {
+                        if(!item.parent){
+							item.id = objID;
+							item.name = objID.replace(/^.*[\\\/]/, '')
+						}						
+                        if(item.parent){
+							item.parent.position.x= pos_x;
+							item.parent.position.y= pos_y;
+							item.parent.position.z= pos_z;
+
+							item.parent.scaling.x= scal_x;
+							item.parent.scaling.y= scal_y;
+							item.parent.scaling.z= scal_z;
+
+							item.parent.rotation.x= rot_x;
+							item.parent.rotation.y= rot_y;
+							item.parent.rotation.z= rot_z;
+                        }
+						//console.log("item id: "+item.id);
+						//console.log("item name: "+item.name);
+                    }
+                }
+                processArray(ObjLoader.loadedMeshes);
+            };
+            loader.load();
+        }
+
+
+        /******* Create scene function ******/
+        var createScene = function () {
+
+            var scene = new BABYLON.Scene(engine);
+
+            scene.useRightHandedSystem = true;
+
+            // Add a camera to the scene and attach it to the canvas
+            var camera1 = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(8, 3, -20), scene);
+            camera1.attachControl(canvas,true);
+			
+            // Add lights to the scene
+            var light1 = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(1, 1, 0), scene);
+            var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1,-1), scene);
+
+
+			// Pass parameters to import_OBJ function ////////////////////////////////////////////////////
+			// (User-specified section)
+
+			import_OBJ(scene, "http://www.example.com/avocado", "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Avocado/glTF-Binary/Avocado.glb", 8, 0, -9, 10, 10, 10, -Math.PI*0.5, 0, 0 );
+
+			import_OBJ(scene, "http://www.example.com/boombox", "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/BoomBox/glTF-Binary/BoomBox.glb" , 11.5, 0, -7.5, 100, 100, 100, 0, -Math.PI*0.75, 0);
+
+			import_OBJ(scene, "http://www.example.com/waterbottle", "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/WaterBottle/glTF-Binary/WaterBottle.glb" , 3, 0, -4, 10, 10, 10, 0, -Math.PI*0.5, 0);
+
+            //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            // show inspector
+            scene.debugLayer.show();
+
+            return scene;
+        };
+        /******* End of the create scene function ******/
+		
+		
+		//Call the createScene function
+        var scene = createScene(); 
+
+        // Register a render loop to repeatedly render the scene
+        engine.runRenderLoop(function () {
+            scene.render();
+        });
+
+        // Watch for browser/canvas resize events
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+
+    </script>
+
+</body>
+
+</html>
+
