@@ -84,9 +84,9 @@ bo:Building a owl:Class ;
                     "Bygning"@da .
 ```
 
-Note: In turtle, "a" is a shortcut for rdf:type. This is handy since this predicate is used so often.
+	Note: In turtle, "a" is a shortcut for rdf:type. This is handy since this predicate is used so often.
 
-Note: graphs in the RDF data model can be described in a number of serialisation formats, namely Turtle, TTL, RDF, etc. Converting between these file formats can be done at: http://www.easyrdf.org/converter.
+	Note: graphs in the RDF data model can be described in a number of serialisation formats, namely Turtle, TTL, RDF, etc. Converting between these file formats can be done at: http://www.easyrdf.org/converter.
 
 ### Task 2.2 
 Add classes and properties to the ontology/vocabulary, using the [Web VOWL editor](http://visualdataweb.de/webvowl_editor/) and/or Notepad (as preferred). Make sure that you have all the vocabulary you need to describe the classroom and/or building of this course.
@@ -102,10 +102,10 @@ Validate your vocabulary using the OWL Validator: http://visualdataweb.de/valida
 ##### PRESENTATION M.H. RASMUSSEN
 Whenever one defines the actual room, building, chair, or anything (namely, the things that have actual physical presence in our surrounding environment), this definition follows a certain vocabulary or ontology (see assignment 1). Such ontologies and vocabularies can be defined using the Web Ontology Language (OWL) and RDF Schema (RDFS). Assignment 2 focused on defining such ontologies. 
 
-Data defined in correspondence with an ontology are called ‘instance data’ or ‘individuals’. They are represented as an RDF graph (see graph in assignment 1). Together, the ontology and the data constitute a ‘knowledge graph’. In this assignment, we will make such data for the current building or room.
+Data defined in correspondence with an ontology are called 'instance data' or 'individuals'. They are represented as an RDF graph (see graph in assignment 1). Together, the ontology and the data constitute a 'knowledge graph'. In this assignment, we will make such data for the current building or room.
 
 ### Task 3.1
-Open the sample data file (todaysroom.ttl) in NotePad and explore what is already defined. Describe with your own words what the file contains. Relate it to the ontology and the previous discussions on vocabulary vs. data.
+Open the sample data file ([todaysroom.ttl](../data/introToLinkedData-Exercises/todaysroom.ttl)) in NotePad and explore what is already defined. Describe with your own words what the file contains. Relate it to the ontology and the previous discussions on vocabulary vs. data.
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -128,10 +128,10 @@ inst:thisBuilding
 Extend the dataset using some of the terms you defined in the ontology in Assignment 2.
 
 ### Task 3.3
-Copy the content of the sample data file "todaysroom.ttl" in the "Triples" tab of the SPARQL-visualiser and visualize the defined data. What is vocabulary, what is data? Add content in the data tab based on what you have learnt in assignments 1 and 2. Try to define the room as good as possible, and try to query and visualize the data.
+Copy the content of the sample data file [todaysroom.ttl](../data/introToLinkedData-Exercises/todaysroom.ttl) in the "Triples" tab of the SPARQL-visualiser and visualize the defined data. What is vocabulary, what is data? Add content in the data tab based on what you have learnt in assignments 1 and 2. Try to define the room as good as possible, and try to query and visualize the data.
 
 ### Recap
-Note: When using terminology of an ontology in a SPARQL query, the namespace of that ontology must be defined as demonstrated below. Here the prefix “ldac” is defined with the namespace of our ontology. Defining such prefixes in SPARQL is slightly different from defining them in TTL (e.g. PREFIX vs. @prefix).
+When using terminology of an ontology in a SPARQL query, the namespace of that ontology must be defined as demonstrated below. Here the prefix "ldac" is defined with the namespace of our ontology. Defining such prefixes in SPARQL is slightly different from defining them in TTL (e.g. PREFIX vs. @prefix).
 
 ```
 PREFIX ldac: <https://ldac2019.summerschool.net/buildingontology#>
@@ -171,11 +171,11 @@ Load all data into the GraphDB triple store:
 
 2. Create a new repository:
 	- Go to Setup > Repositories > Create new Repository
-	- Name the repository (e.g. ”LDAC”) and click OK
+	- Name the repository (e.g. "LDAC") and click OK
 
 3. Select the created repository as the active repository by clicking its name on the top right of the window
 
-4. Import the sample data file “todaysroom.ttl”:
+4. Import the sample data file [todaysroom.ttl](../data/introToLinkedData-Exercises/todaysroom.ttl):
 	- Go to Import > RDF > Upload RDF files
 
 ### Task 4.3
@@ -183,9 +183,9 @@ Explore the data using SPARQL queries and default browsing functionality:
 
 #### Browse the data:
 -	Go to Explore > Graphs Overview
--	Click ”The default graph”
+-	Click "The default graph"
 -	Select one of the instance nodes (e.g: inst:thisBuilding)
--	Go to ”Visual Graph” at the top right of the window
+-	Go to "Visual Graph" at the top right of the window
 -	Keep clicking
 
 ![GraphDB browse](../figures/graphDBbrowse.png)
