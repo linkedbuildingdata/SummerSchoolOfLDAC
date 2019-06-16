@@ -13,7 +13,8 @@ Through the exercises listed in this document, you'll learn to think in terms of
 -	Understand the basics on what information can be described in ontologies
 -	Construct an LBD-compliant RDF graph
 
-## ASSIGNMENT 1 – WHERE IN THE GRAPH ARE WE??? [PRESENTATION P. PAUWELS]
+## ASSIGNMENT 1 – WHERE IN THE GRAPH ARE WE???
+##### PRESENTATION P. PAUWELS
 Our environment can be described in many ways. Let's describe our environment in a graph!
 
 ### Task 1.1
@@ -41,7 +42,8 @@ Evaluate: what kind of data was difficult to represent in a graph? What kind of 
 -	Did you include time schedule data?
 -	Why (not)?
 
-## ASSIGNMENT 2 – THE VOCABULARY OR ONTOLOGY [PRESENTATION M. POVEDA-VILLALON]
+## ASSIGNMENT 2 – THE VOCABULARY OR ONTOLOGY
+##### PRESENTATION M. POVEDA-VILLALON
 An initial ontology or vocabulary file is available in the LDAC folder ([ldac.ttl](../data/introToLinkedData-Exercises/ldac.ttl)). This vocabulary defines a building class, a space class, and a relation between both. This ontology or vocabulary can be used to start defining the environment and elements around you (the 'data' or 'instances'). The vocabulary only defines the overall terminology and definitions that can be used to define concepts and things; it does not define actual things.
 
 ### Task 2.1
@@ -96,7 +98,8 @@ Download the resulting ontology or vocabulary file in the format of your liking 
 Validate your vocabulary using the OWL Validator: http://visualdataweb.de/validator/. 
 
 
-## ASSIGNMENT 3 – THE DATA [PRESENTATION M.H. RASMUSSEN]
+## ASSIGNMENT 3 – THE DATA
+##### PRESENTATION M.H. RASMUSSEN
 Whenever one defines the actual room, building, chair, or anything (namely, the things that have actual physical presence in our surrounding environment), this definition follows a certain vocabulary or ontology (see assignment 1). Such ontologies and vocabularies can be defined using the Web Ontology Language (OWL) and RDF Schema (RDFS). Assignment 2 focused on defining such ontologies. 
 
 Data defined in correspondence with an ontology are called ‘instance data’ or ‘individuals’. They are represented as an RDF graph (see graph in assignment 1). Together, the ontology and the data constitute a ‘knowledge graph’. In this assignment, we will make such data for the current building or room.
@@ -151,7 +154,8 @@ WHERE {
 }
 ```
 
-## ASSIGNMENT 4 – SCALE UP AND START USING A TRIPLE STORE [PRESENTATION M.H. RASMUSSEN]
+## ASSIGNMENT 4 – SCALE UP AND START USING A TRIPLE STORE
+##### PRESENTATION M.H. RASMUSSEN
 
 ### Task 4.1
 Install GraphDB for this exercise from http://graphdb.ontotext.com/. GraphDB is a free to use triple store provided by OntoText. It provides all functionality you need to work with RDF graphs more professionally. This triple store can be considered to be a database management systems optimised for RDF graphs. Other triple stores are also available.
