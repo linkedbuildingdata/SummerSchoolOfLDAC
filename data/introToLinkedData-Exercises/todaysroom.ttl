@@ -1,0 +1,17 @@
+@prefix rdf:		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:		<http://www.w3.org/2001/XMLSchema#> .
+@prefix ldac:		<https://ldac2019.summerschool.net/buildingontology#> .
+
+@prefix inst:		<https://ldac2019.summerschool.net/20190616/YourName#> .
+
+inst:thisBuilding
+	rdf:type ldac:Building ;
+    rdfs:label "Beta-i building" .
+
+inst:thisSpace 
+	rdf:type ldac:Space ;
+    rdfs:label "LDAC Summer School Space" .
+	
+inst:thisBuilding 
+	ldac:hasSpace inst:thisSpace .
