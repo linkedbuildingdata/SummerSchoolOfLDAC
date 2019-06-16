@@ -1,20 +1,20 @@
 # Intro to Linked Data and Semantic Web: the Basics
 
 Pieter Pauwels, Ghent University
-
+Maria Poveda-Villalon, UPM Madrid
 Mads Holten Rasmussen, NIRAS
 
-The first session of the LDAC summer school is about the vision and basics of the Semantic Web and Linked Data. You will be introduced to Linked Data in general, and with the work of the Linked Building Data (LBD) community group in particular. Through a number of slides, you will be introduced to the technical basics. More specifically, this session introduces the concept of linked data, graphs, ontologies, and graph-based information modelling in general. 
+The first session of the [LDAC summer school](http://linkedbuildingdata.net/ldac2019/summerschool/) is about the vision and basics of the Semantic Web and Linked Data. You will be introduced to Linked Data in general, and with the work of the [Linked Building Data (LBD) community group](https://www.w3.org/community/lbd/) in particular. Through a number of slides (see [Presentation](../presentations/20190616_LinkedData.pdf)), you will be introduced to the technical basics. More specifically, this session introduces the concept of linked data, graphs, ontologies, and graph-based information modelling in general. 
 
-Through the exercises listed in this document, you’ll learn to think in terms of graphs about the built environment that surrounds you. More particularly, you will apply this to the room in which you are currently in. Furthermore, you’ll learn how to represent this room in an RDF graph, and you’ll be introduced to the concept of ontologies and vocabularies.
+Through the exercises listed in this document, you'll learn to think in terms of graphs about the built environment that surrounds you. More particularly, you will apply this to the room in which you are currently in. Furthermore, you’ll learn how to represent this room in an RDF graph, and you’ll be introduced to the concept of ontologies and vocabularies.
 
 ### Learning objectives
 -	Understand the principles of Linked (Building) Data (LBD)
 -	Understand the basics on what information can be described in ontologies
 -	Construct an LBD-compliant RDF graph
 
-## ASSIGNMENT 1 – WHERE IN THE GRAPH ARE WE???
-Our environment can be described in many ways. Let’s describe our environment in a graph!
+## ASSIGNMENT 1 – WHERE IN THE GRAPH ARE WE??? [PRESENTATION P. PAUWELS]
+Our environment can be described in many ways. Let's describe our environment in a graph!
 
 ### Task 1.1
 Take pen and paper and post-its. Define with nodes and arcs what building and space we are in.
@@ -31,7 +31,7 @@ Evaluate:
 -	What terms did you use? 
 -	What is vocabulary, what is data?
 -	What could be re-used or defined by others?
--	Does every ‘thing’ have its own identifier or node?
+-	Does every 'thing' have its own identifier or node?
 -	Where are literals and where are nodes?
 
 ### Task 1.3
@@ -41,28 +41,27 @@ Evaluate: what kind of data was difficult to represent in a graph? What kind of 
 -	Did you include time schedule data?
 -	Why (not)?
 
-## ASSIGNMENT 2 – THE VOCABULARY OR ONTOLOGY
-An initial ontology or vocabulary file can be found in the shared folder (ldac.ttl). This vocabulary defines a building class, a space class, and a relation between both. This ontology or vocabulary can be used to start defining the environment and elements around you (the ‘data’ or ‘instances’). The vocabulary only defines the overall terminology and definitions that can be used to define concepts and things; it does not define actual things.
+## ASSIGNMENT 2 – THE VOCABULARY OR ONTOLOGY [PRESENTATION M. POVEDA-VILLALON]
+An initial ontology or vocabulary file is available in the LDAC folder ([ldac.ttl](../data/introToLinkedData-Exercises/ldac.ttl)). This vocabulary defines a building class, a space class, and a relation between both. This ontology or vocabulary can be used to start defining the environment and elements around you (the 'data' or 'instances'). The vocabulary only defines the overall terminology and definitions that can be used to define concepts and things; it does not define actual things.
 
 ### Task 2.1
-Open the vocabulary (ldac.ttl) in an online visualization tool (e.g. [WebVOWL](http://www.visualdataweb.de/webvowl/)) and explore what is already defined.
+- Open the vocabulary ([ldac.ttl](../data/introToLinkedData-Exercises/ldac.ttl)) in an online visualization tool (e.g. [WebVOWL](http://www.visualdataweb.de/webvowl/)) and explore what is already defined.
+- Copy the content of the file into the "Triples" tab of the [SPARQL-visualizer](https://madsholten.github.io/sparql-visualizer/) and explore the full content of the file.
 
-Copy the content of the file into the "Triples" tab of the [SPARQL-visualizer](https://madsholten.github.io/sparql-visualizer/) and explore the full content of the file.
+	Instructions:
+	* Click on the dropdown list and click "1. Sample data"  
+	* Open the tabs that appear on the right (Triples, Query, Result). 
+	* Change some of the data in the Triples tab, Update, and perform the query again. Notice the differences in the resulting graph. 
 
-Instructions:
--	Click on the dropdown list and click "1. Sample data"  
--	Open the tabs that appear on the right (Triples, Query, Result). 
--	Change some of the data in the Triples tab, Update, and perform the query again. Notice the differences in the resulting graph. 
+	![Linked Data in SPARQL-visualizer](../figures/SPARQL-visualizer.png)
 
-![Linked Data in SPARQL-visualizer](../figures/SPARQL-visualizer.png)
+- Also open the file in Notepad and explore what you see. 
 
-Also open the file in Notepad and explore what you see. 
-
-Evaluate
--	What is a namespace?
--	What is a prefix?
--	Is everything unique? Why (not)?
--	What is the difference between ‘.’, ‘;’, and ‘,’?
+	Evaluate
+	* What is a namespace?
+	* What is a prefix?
+	* Is everything unique? Why (not)?
+	* What is the difference between ‘.’, ‘;’, and ‘,’?
 
 ### Recap
 The RDF file is encoded in a syntax called Turtle. Turtle is one of the more human-readable serialization languages for RDF graphs. The two listings below contain the same information and demonstrate how the Turtle syntax provides means to make a more compact and readable file.
@@ -97,7 +96,7 @@ Download the resulting ontology or vocabulary file in the format of your liking 
 Validate your vocabulary using the OWL Validator: http://visualdataweb.de/validator/. 
 
 
-## ASSIGNMENT 3 – THE DATA
+## ASSIGNMENT 3 – THE DATA [PRESENTATION M.H. RASMUSSEN]
 Whenever one defines the actual room, building, chair, or anything (namely, the things that have actual physical presence in our surrounding environment), this definition follows a certain vocabulary or ontology (see assignment 1). Such ontologies and vocabularies can be defined using the Web Ontology Language (OWL) and RDF Schema (RDFS). Assignment 2 focused on defining such ontologies. 
 
 Data defined in correspondence with an ontology are called ‘instance data’ or ‘individuals’. They are represented as an RDF graph (see graph in assignment 1). Together, the ontology and the data constitute a ‘knowledge graph’. In this assignment, we will make such data for the current building or room.
@@ -152,7 +151,7 @@ WHERE {
 }
 ```
 
-## ASSIGNMENT 4 – SCALE UP AND START USING A TRIPLE STORE
+## ASSIGNMENT 4 – SCALE UP AND START USING A TRIPLE STORE [PRESENTATION M.H. RASMUSSEN]
 
 ### Task 4.1
 Install GraphDB for this exercise from http://graphdb.ontotext.com/. GraphDB is a free to use triple store provided by OntoText. It provides all functionality you need to work with RDF graphs more professionally. This triple store can be considered to be a database management systems optimised for RDF graphs. Other triple stores are also available.
@@ -162,18 +161,18 @@ Load all data into the GraphDB triple store:
 
 1. start GraphDB and go to http://localhost:7200/
 
-The GraphDB triple store is accessible through your browser. The GraphDB process is listening to port 7200 of your local machine. This is a local installation and all data that you use in this local GraphDB instance remains within your own local machine.
+	The GraphDB triple store is accessible through your browser. The GraphDB process is listening to port 7200 of your local machine. This is a local installation and all data that you use in this local GraphDB instance remains within your own local machine.
 
-![GraphDB start](../figures/graphDBstart.png)
+	![GraphDB start](../figures/graphDBstart.png)
 
 2. Create a new repository:
-- Go to Setup > Repositories > Create new Repository
-- Name the repository (e.g. ”LDAC”) and click OK
+	- Go to Setup > Repositories > Create new Repository
+	- Name the repository (e.g. ”LDAC”) and click OK
 
 3. Select the created repository as the active repository by clicking its name on the top right of the window
 
 4. Import the sample data file “todaysroom.ttl”:
-- Go to Import > RDF > Upload RDF files
+	- Go to Import > RDF > Upload RDF files
 
 ### Task 4.3
 Explore the data using SPARQL queries and default browsing functionality:
@@ -185,13 +184,9 @@ Explore the data using SPARQL queries and default browsing functionality:
 -	Go to ”Visual Graph” at the top right of the window
 -	Keep clicking
 
-![GraphDB browse](../figures/graphDBbrows.png)
+![GraphDB browse](../figures/graphDBbrowse.png)
 
 #### Query the data:
 -	Go to "Query" and insert a query like the one below
 
 ![GraphDB query](../figures/graphDBquery.png)
-
-
-
-
