@@ -1,4 +1,4 @@
-# Intro to Linked Data and Semantic Web: the Basics
+# Introduction to Linked Data and Semantic Web: The Basics
 
 Pieter Pauwels, Ghent University
 Maria Poveda-Villalon, UPM Madrid
