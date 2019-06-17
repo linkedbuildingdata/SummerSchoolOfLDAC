@@ -1,0 +1,38 @@
+@prefix bot: <https://w3id.org/bot#> .
+@prefix : <https://ldac.org/house#> .
+@prefix conn:  <https://ldac.org/connection#> .
+# A simple two storey building with two spaces at each floor.
+
+:SiteA a bot:Site ;
+    bot:hasBuilding :BuildingA .
+
+# Since the range of bot:hasBuilding is bot:Building it is 
+# automatically inferred that :BuildingA is a bot:Building.
+
+:BuildingA bot:hasStorey :Storey00 , :Storey01 .
+
+# Since the range of bot:hasStorey is bot:Storey it is automatically 
+# inferred that :Storey00 and :Storey01 are instances of bot:Storey.
+
+:Storey00 bot:hasSpace :SpaceA , :SpaceB .
+
+:Storey01 bot:hasSpace :SpaceC , :SpaceD .
+
+
+# let's assume B is above C:L
+:SpaceA conn:isConnectedTo :SpaceB .
+:SpaceB conn:isConnectedTo :SpaceC .
+:Storey00 conn:isConnectedTo :SpaceA .
+
+# Since the range of bot:hasSpace is bot:Space it is automatically inferred
+# that :SpaceA, :SpaceB, :SpaceC and :SpaceD are instances of bot:Space.
+
+# Since bot:Site, bot:Building, bot:Storey and bot:Building are all sub classes of
+# bot:Zone, :SiteA, :BuildingA, :Storey00 , :Storey01, :SpaceA, :SpaceB,
+# :SpaceC and :SpaceD are all instances of bot:Zone
+
+# Since bot:hasBuilding, bot:hasStorey and bot:hasSpace are all sub properties of 
+# bot:containsZone the following can also be deduced:
+# 
+# :SiteA bot:containsZone :BuildingA .
+# :BuildingA bot:containsZone :Storey00 , :Storey01 .
