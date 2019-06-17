@@ -17,10 +17,13 @@ If you are not familiar to iPython/ Jupyter etc. please refer to the [introducto
 
 A couple of persons contributed to the content of this repository (Sorted alphabetically):
 
+* **Jakob Beetz**, [RG](https://www.researchgate.net/profile/Jakob_Beetz)  
 * **Matthias Bonduel**, [RG](https://www.researchgate.net/profile/Mathias_Bonduel)  
 * **Rui de Klerk**, [RG](https://www.researchgate.net/profile/Rui_De_Klerk)  
 * **Kris McGlinn**, [RG](https://www.researchgate.net/profile/Dr_Kris_Mcglinn)  
+* **Mads Holten Rasmussen**, [RG](https://www.researchgate.net/profile/Mads_Holten_Rasmussen)  
 * **Pieter Pauwels**, [RG](https://www.researchgate.net/profile/Pieter_Pauwels)  
+* **María Poveda-Villalón**, [RG](https://www.researchgate.net/profile/Maria_Poveda-Villalon)  
 * **Georg Ferdinand Schneider**, [RG](https://www.researchgate.net/profile/Georg_Schneider3)  
 * **Walter Terkaj**, [RG](https://www.researchgate.net/profile/Walter_Terkaj)  
 * **Anna Wagner**, [RG](https://www.researchgate.net/profile/Anna_Wagner13)  
