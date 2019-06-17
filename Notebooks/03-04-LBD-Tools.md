@@ -18,7 +18,7 @@ This document outlines a set of exercises that will introduce a selection of the
 
 In part 1 we will convert an IFC file to a LBD-graph and query it to discover the information it contains. Thereby, it is demonstrated how the Building Topology Ontology (BOT) is used in practice.
 
-For these exercise you will need to download the Common Building Information Model File: [Duplex Apartment](https://www.nibs.org/page/bsa_commonbimfiles#project1) in IFC format. You will also need to download and setup the [https://github.com/jyrkioraskari/IFCtoLBD](IFCtoLBD) converter by following the instructions in the repository. It is recommended that you just use the precompiled *.jar* file for Java 8.
+For these exercise you will need to download the Common Building Information Model File: [Duplex Apartment](https://www.nibs.org/page/bsa_commonbimfiles#project1) in IFC format. You will also need to download and setup the [IFCtoLBD](https://github.com/jyrkioraskari/IFCtoLBD) converter by following the instructions in the repository. It is recommended that you just use the precompiled *.jar* file for Java 8.
 
 #### 1. Generate LBD-graph
 -	Download the IFCtoLBD tool
