@@ -1,0 +1,46 @@
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix vann:       <http://purl.org/vocab/vann/> .
+@prefix voaf:       <http://purl.org/vocommons/voaf#> .
+
+@prefix ldac:         <https://ldac2019.summerschool.net/buildingontology#> .
+
+# METADATA
+<https://ldac2019.summerschool.net/buildingontology#> a owl:Ontology , voaf:Vocabulary ;
+    dcterms:modified    "2019-06-17"^^xsd:date ;
+    dcterms:issued      "2019-06-17"^^xsd:date ;	
+    dcterms:title       "The LDAC Summer School Building Ontology"@en ;
+    dcterms:description """The LDAC Summer School Building Ontology is a simple ontology defining the core concepts of a building."""@en ;
+    dcterms:license     <https://creativecommons.org/licenses/by/1.0/> ;
+    vann:preferredNamespacePrefix   "ldac" ;
+    vann:preferredNamespaceUri      <https://ldac2019.summerschool.net/buildingontology#> .
+
+# CLASSES
+ldac:Building a owl:Class ;
+    rdfs:label      "Building"@en ,
+                    "Bygning"@da ,
+                    "Gebouw"@nl ;
+    rdfs:comment    "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO 12006-2:2013]"@en ,
+                    "En uafhængig del af det byggede miljø med en karakteristisk rumlig struktur, der understøtter mindst én funktion eller brugeraktivitet"@da ;
+	rdfs:isDefinedBy ldac: .
+
+ldac:Space a owl:Class ;
+    rdfs:label      "Space"@en ,
+					"Ruimte"@nl ,
+                    "Rum"@da ;
+    rdfs:comment    "A limited three-dimensional extent defined physically or notionally [ISO 12006-2 (DIS 2013), 3.4.3]"@en ,
+                    "En afgrænset tredimensionel udstrækning defineret fysisk eller fiktivt"@da ;
+	rdfs:isDefinedBy ldac: .
+
+# PROPERTIES
+ldac:hasSpace a owl:ObjectProperty ;
+    rdfs:label      "has space"@en ,
+					"heeft ruimte"@nl ,
+                    "har rum"@da ;
+    rdfs:comment    "Relation to spaces contained in a building."@en ,
+                    "Relation til rum indeholdt i en bygning."@da ;
+    rdfs:domain ldac:Building ;
+    rdfs:range ldac:Space ;
+	rdfs:isDefinedBy ldac: .
