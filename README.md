@@ -1,6 +1,10 @@
 # Summer School Of LDAC
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakob-beetz/SummerSchoolOfLDAC/multiKernel)
 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakob-beetz/SummerSchoolOfLDAC/multiKernel)
+
+Copy markdown link to clipboard 
 This repository contains the documentation and source of the coding challenge of the [Summer School of Linked Data in Architecture and Construction](http://linkedbuildingdata.net/ldac2019/summerschool/) held 17 - 18 June in Lisbon, Portugal. The summer school precedes the [7th Workshop on Linked Data in Architecture and Construction (LDAC)](http://linkedbuildingdata.net/ldac2019/).
 
 ![Summer School Banner](figures/LogoLDACSummerschool.png)
