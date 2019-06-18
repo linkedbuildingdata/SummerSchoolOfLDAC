@@ -6,7 +6,11 @@ This repository contains the documentation and source of the coding challenge of
 ## Getting Started
 
 Please move to [Index](Notebooks/Index.ipynb) to start working with the material of the 2019 edition of the Summer School of LDAC. You can also launch the content by opening it in Binder or Colab:  
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/linkedbuildingdata/SummerSchoolOfLDAC/master) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/linkedbuildingdata/SummerSchoolOfLDAC/blob/master/Notebooks/Index.ipynb)  
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/linkedbuildingdata/SummerSchoolOfLDAC/master) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/linkedbuildingdata/SummerSchoolOfLDAC/blob/master/Notebooks/Index.ipynb)
+
+For the Java Notebooks in the multiKernel branch, you can use the following binder:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakob-beetz/SummerSchoolOfLDAC/multiKernel)
+
 ## Usage and Tools
 
 The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a [iPyhton](https://ipython.org/) installation is required. We suggest using a python distribution such as [Anaconda](https://www.anaconda.com/distribution/) to work locally.
