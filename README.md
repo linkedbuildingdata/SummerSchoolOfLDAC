@@ -42,6 +42,10 @@ We store some open data obtained from other sources in the [data](data) folder o
 
 * 2012-03-23-Duplex-Handover.xlsx from *Common Building Information Model Files and Tools* by E. William East, PhD, PE - Engineer Research and Development Center, U.S Army, Corps of Engineers, [https://www.nibs.org/page/bsa_commonbimfiles#project1](https://www.nibs.org/page/bsa_commonbimfiles#project1), Last accessed 12 May 2019.
 
+## Citation
+
+You may cite this code in your publications using the following DOI: [![DOI](https://zenodo.org/badge/123.svg)](https://zenodo.org/badge/latestdoi/123)
+
 ## License
 
 ### Code
