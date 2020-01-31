@@ -13,7 +13,7 @@ For the Java Notebooks in the multiKernel branch, you can use the following bind
 
 ## Usage and Tools
 
-The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org). For the local usage a [iPyhton](https://ipython.org/) installation is required. We suggest using a python distribution such as [Anaconda](https://www.anaconda.com/distribution/) to work locally.
+The content of this summer school are distributed using [Jupyter](https://jupyter.org/) notebooks. The notebooks can be statically examined in Github by simply clicking on it. To execute the scripts they can be either locally executed or the project can be opened using [Binder](https://mybinder.org) [1]. For the local usage a [iPyhton](https://ipython.org/) installation is required. We suggest using a python distribution such as [Anaconda](https://www.anaconda.com/distribution/) to work locally.
 
 If you are not familiar to iPython/ Jupyter etc. please refer to the [introductory content](https://jakevdp.github.io/PythonDataScienceHandbook/01.00-ipython-beyond-normal-python.html) by Jake VanderPlas
 
@@ -53,3 +53,7 @@ All source code provided in this repository is licensed under the [MIT license](
 
 ### Text
 The textual description in the notebooks and all other content which is not source code is licensed under the [CC-BY-SA-4.0](LICENSE-TEXT) license.
+
+## References
+
+[1] Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable Environments for Science at Scale." Proceedings of the 17th Python in Science Conference. 2018. doi://10.25080/Majora-4af1f417-011
