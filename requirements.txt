@@ -2,7 +2,7 @@ alembic==1.0.9
 async-generator==1.10
 attrs==19.1.0
 backcall==0.1.0
-bleach==3.1.0
+bleach==3.3.0
 certifi==2019.3.9
 chardet==3.0.4
 decorator==4.4.0
