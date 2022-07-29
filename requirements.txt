@@ -26,7 +26,7 @@ jupyterlab-server==0.2.0
 keepalive==0.5
 Mako==1.0.9
 MarkupSafe==1.1.1
-mistune==0.8.4
+mistune==2.0.3
 nbconvert==5.4.1
 nbformat==4.4.0
 notebook==5.7.8
